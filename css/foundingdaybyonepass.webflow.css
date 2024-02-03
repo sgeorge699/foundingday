@@ -44,14 +44,14 @@
   --color--sec--08-lighter: #ccb5a3;
 }
 
-.w-layout-vflex {
-  flex-direction: column;
+.w-layout-hflex {
+  flex-direction: row;
   align-items: flex-start;
   display: flex;
 }
 
-.w-layout-hflex {
-  flex-direction: row;
+.w-layout-vflex {
+  flex-direction: column;
   align-items: flex-start;
   display: flex;
 }
