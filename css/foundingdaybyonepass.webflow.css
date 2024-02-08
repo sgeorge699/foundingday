@@ -2315,6 +2315,7 @@ body {
   padding-top: 200px;
   padding-left: 16px;
   padding-right: 16px;
+  transition: opacity 1s cubic-bezier(.25, .46, .45, .94);
   display: flex;
   overflow: hidden;
 }
@@ -3373,7 +3374,6 @@ body {
 
 .home-body.add-color-center {
   background-color: var(--color--main--01);
-  overflow: visible;
 }
 
 .tab-link-img {
@@ -4399,6 +4399,11 @@ body {
     min-height: 300px;
   }
 
+  .logos-area {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .hero-top-logos {
     object-fit: contain;
   }
@@ -4467,7 +4472,7 @@ body {
     display: none;
   }
 
-  .tab-link-container.tab-active.w--current, .tab-link-container.tab-2-inactive {
+  .tab-link-container.tab-active, .tab-link-container.tab-active.w--current, .tab-link-container.tab-2-inactive {
     width: 200px;
     height: 200px;
   }

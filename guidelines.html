@@ -1,5 +1,5 @@
 <!DOCTYPE html><!--  This site was created in Webflow. https://www.webflow.com  -->
-<!--  Last Published: Wed Feb 07 2024 21:08:30 GMT+0000 (Coordinated Universal Time)  -->
+<!--  Last Published: Thu Feb 08 2024 14:07:13 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="65bcc99c89874847611e9700" data-wf-site="65bcc80b75a694ecda62c90e" lang="ar">
 <head>
   <meta charset="utf-8">
@@ -23,6 +23,12 @@
   body {
     direction: rtl;
   }
+  .loading{
+    overflow: hidden;
+}
+  .opacity0{
+    opacity: 0;
+}
 </style>
   <!--  Hotjar Tracking Code for https://www.1pass.app/foundingday  -->
   <script>
@@ -1202,14 +1208,16 @@ tl.to(".page-loader_text-fill", {
     duration: loaderDuration,
     ease: CustomEase.create("custom", customEase)
 }, 0);
-// Disable scrolling initially
+</script>
+  <script>
+ // Disable scrolling initially
 document.addEventListener("DOMContentLoaded", function () {
     setTimeout(function () {
         // Hide loader
         document.querySelector('.loader-overlay').style.display = 'none';
         // Allow scrolling
         document.body.classList.remove('loading');
-    }, 9000); // Replace 3000 with the actual time your loader takes
+    }, 8000);
 });
 </script>
 </body>
